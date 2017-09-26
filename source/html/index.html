@@ -1,17 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MP1 Starter</title>
-</head>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 
-<body>
+  <header id = "header">
+    <nav class = "nav" id = "navbar">
+      <a class="scroll" scrollSpeed="2000" id = 'samp' href="#Carousel">Samples</a>
+      <a class="scroll" scrollSpeed="2000" id = 'work' href="#LearnMore">My Work</a>
+      <a class="scroll" scrollSpeed="2000" id = 'quote' href="#Quote">Inspiration</a>
+      <a class="scroll" scrollSpeed="2000" id = 'about' href="#aboutMe">About Me</a>
+      <a class="scroll" scrollSpeed="2000" id = 'vid' href="#video">Welcome</a>
+    </nav>
+  </header>
+  <body>
 
-    <h2>Welcome to MP1!</h2>
+    <div id="content">
+
+      <div id="video">
+          <video class="vid" loop no-controls autoplay muted src="../assets/italy.mp4"></video>
+          <div class="video-text">
+            <h1> Behind The Lens </h1>
+          </div>
+      </div>
+
+      <div id="aboutMe">
+        <h1> Hi! My name is Nikitha Gajula and I'm a student at the University of Illinois at Urbana-Champaign. Photography has been a passion of mine for the last 7 years and I love being able to share my work with others. I hope you enjoy what you see! All the videos and images here were shot by me throughout the years.</h1>
+      </div>
+
+      <div id="Quote">
+        <h1>“What I like about photographs is that they capture a moment that’s gone forever, impossible to reproduce.”</h1>
+        <h2> — Karl Lagerfeld </h2>
+      </div>
+
+      <div id="LearnMore">
+          <h1> Click on each picture to learn more about what kind of things I like to shoot!</h1>
+          <img id="myImg" src="../assets/Rome.JPG" >
+          <div id="modalWindow" class="modal">
+            <span id = "close1" class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption">
+              <p> Pictures of locations capture history and culture. </p>
+            </div>
+          </div>
+
+          <img id="myImg2" src="../assets/beach.jpg">
+          <div id="modalWindow2" class="modal">
+            <span id = "close2" onloadedmetadata=""class="close">&times;</span>
+            <img class="modal-content" id="img02">
+            <div id="caption2">
+              <p> Portraits showcase what's best about people. </p>
+            </div>
+          </div>
+
+          <img id="myImg3" src="../assets/Candid.jpg" >
+          <div id="modalWindow3" class="modal">
+            <span id = "close3" class="close">&times;</span>
+            <img class="modal-content" id="img03">
+            <div id="caption3">
+              <p> Candid photos capture real moments and emotions. </p>
+            </div>
+          </div>
+        </div>
+
+      <div id="Carousel">
+
+        <div class="slideshow">
+
+        <div class="slide fade">
+          <img src="../assets/img1.jpg" style="width:100%">
+        </div>
+
+        <div class="slide fade">
+          <img src="../assets/img2.jpg" style="width:100%">
+        </div>
+
+        <div class="slide fade">
+          <img src="../assets/img3.jpg" style="width:100%">
+        </div>
+
+        <a id="prev">&#10094;</a>
+        <a id="next">&#10095;</a>
+
+        </div>
+        <br>
+
+      </div>
+
+      <div id="contactMe">
+        <h1> Contact me! </h1>
+        <div class="leftColumn">
+          <img id = "socialMediaVector" src="../assets/flickr.svg"></img>
+        </div>
+        <div class="midColumn">
+          <img id = "socialMediaVector" src="../assets/instagram.svg"></img>
+        </div>
+        <div class="rightColumn">
+          <img id = "socialMediaVector" src="../assets/linkedin.svg"></img>
+        </div>
+      </div>
+
+    </div>
 
     <script src="bundle.js" type="text/javascript"></script>
-</body>
 
+  </body>
 </html>
