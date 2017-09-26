@@ -4,10 +4,10 @@
  */
 
 // HTML Files
-require('./html/index.html');
+require('index.html');
 
 // Stylesheets
-require('./styles/main.scss');
+require('main.scss');
 
 // Scripts
-require('./scripts/main.js');
+require('main.js');
